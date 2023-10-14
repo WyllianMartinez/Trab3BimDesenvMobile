@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadClienteActivity"
+    android:orientation="vertical"
+    android:background="@color/cinza_claro">
+
+
+    <include layout="@layout/activity_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/fundo_titulo"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Produto"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição:"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/edtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_fundo_edit_text"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor Unitário:"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/edtVlrUnitario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_fundo_edit_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Und. Media:"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/edtUndMedida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_fundo_edit_text"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gvProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:padding="5dp"
+            android:background="@drawable/border_fundo_grid"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnSalvarProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_produto"
+
+            />
+
+        <Button
+            android:id="@+id/btnCancelarProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_pedido"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

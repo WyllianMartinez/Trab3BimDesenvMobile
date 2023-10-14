@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cinza">
+
+
+    <include layout="@layout/activity_tool_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SalesOrderApp"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/img"
+
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="10dp">
+
+        <Button
+            android:id="@+id/btnCliente"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="Cadastrar Cliente"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/button_cliente"
+            />
+
+        <Button
+            android:id="@+id/btnEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="Cadastrar Endereço"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/button_endereco"
+            />
+
+        <Button
+            android:id="@+id/btnProduto"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="Cadastrar Produto"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/button_produto"
+
+            />
+
+        <Button
+            android:id="@+id/btnPedido"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="Pedido de Venda"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/button_pedido"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
